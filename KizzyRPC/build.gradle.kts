@@ -9,14 +9,14 @@ plugins {
 
 }
 
-group = "io.github.kotlin"
-version = "1.0.0"
+group = "io.github.threethan"
+version = "0.0.1"
 
 kotlin {
     jvm()
     @Suppress("UnstableApiUsage")
     androidLibrary {
-        namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
+        namespace = "io.github.threethan.kizzyrpcmp"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
 
@@ -57,7 +57,7 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates(group.toString(), "library", version.toString())
+    coordinates(group.toString(), "kizzyrpcmp", version.toString())
 
     pom {
         name = "KizzyRPC-MultiPlatform"
@@ -76,11 +76,17 @@ mavenPublishing {
                 id = "dead8309"
                 name = "Vaibhav Raj"
                 url = "https://github.com/dead8309"
+                email = "dead8309@example.com"
+                organization = "Independent"
+                organizationUrl = "https://github.com/dead8309"
             }
             developer {
                 id = "threethan"
                 name = "Ethan Medeiros"
                 url = "https://github.com/threethan"
+                email = "ethanjmedei@gmail.com"
+                organization = "Independent"
+                organizationUrl = "https://github.com/threethan"
             }
         }
         scm {
